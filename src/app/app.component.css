@@ -1,10 +1,72 @@
-.container{
-    display:flex;
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    height: 100vh;
+    background-color: rgb(232, 227, 227);
+    font-family: 'Hubballi', sans-serif;
+}
+.todo{
+    position: absolute;
+    width: 35vw;
+    height: 40vh;
+    display: flex;
     justify-content: center;
-    align-items: center;
-}.style{
-    font-size: 23px;
-    border-radius: 5px;
-    padding: 10px;
+    border: 2px solid black;
+    margin-left: 65vh;
+    margin-top: 28vh;
     font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: 'Hubballi', sans-serif;
+    cursor: pointer;
+    
+}
+.todo input{
+    position: absolute;
+    height: 45px;
+    width: 350px;
+    top: 50%;
+    margin-right: 53px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 10px;
+    font-family: 'Hubballi', sans-serif;
+    text-align: center;
+}
+.todo button{
+    position: absolute;
+    height: 38px;
+    width: 65px;
+    margin-right: 40px;
+    top: 51%;
+    left: 85%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Hubballi', sans-serif;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    
+}
+h2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ul{
+    bottom: 35px;
+    left: 25px;
+    position: absolute;
+    font-size: 20px;
+}
+#get{
+position: absolute;
+bottom: 10px;
+left: 20px;
 }

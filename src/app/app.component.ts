@@ -7,34 +7,36 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newTodoListAngular';
-  arr:any =[];
-  inputValue:any;
-  obj:any;
-  arnav:boolean = true;
-  data:any
-  getInputVAlue(){
-    this.obj={
-      'value':this.inputValue
+  arr: any = [];
+  inputValue: any;
+  obj: any;
+  arnav: boolean = true;
+  data: any;
+
+  
+  getInputVAlue() {
+    this.obj = {
+      'value': this.inputValue
     }
     this.arr.push(this.obj)
-    this.inputValue=''
-    this.data = this.arr
-    
-    
+    this.inputValue = '';
+    this.data = this.arr;
+
+
   }
-  deleteTodo(ind:any){
-    this.arr.splice(ind,1)
-    this.inputValue=''
-    
+  deleteTodo(ind: any) {
+    this.arr.splice(ind, 1)
+    this.inputValue = ''
+
   }
-  edit(index:any){
+  edit(index: any) {
     this.inputValue = this.obj.value;
-    this.arr.splice(index,1)
-           
+    this.arr.splice(index, 1)
+
   }
-  parentFunction(data:any){
-  this.inputValue = data
-    
+  parentFunction(data: any) {
+    this.inputValue = data
+
   }
-  
+
 }

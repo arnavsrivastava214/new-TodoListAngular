@@ -17,6 +17,7 @@ export class ChildComponent {
   ngOnInit(){
 
   }
+  
   deleteTodo(ind:any){
     this.item.splice(ind,1);
     

@@ -1,18 +1,9 @@
-<div class="container">
-<div class="center">
-
-  <h1>this is Todo list tutrials </h1>
-  
-  
-  
-  <input type="text" class="style" name="name" [(ngModel)]="inputValue">
-  <button class="style" (click)="getInputVAlue()">save</button>
-  <br><br>
-  <li *ngFor="let item of arr ; index as i" class="style">
-    {{item.value}}
-    
-  </li>
+<div class="container-fluid">
+  <h2 class="text-center py-2">Welcome To my Todo List</h2>
+  <div class="todo">
+      Todo Lists
+      <input type="text" value="Add Your Task"  [(ngModel)]="inputValue" >
+      <button class="btn"(click)="getInputVAlue()">Add</button>
+  </div>
 </div>
-</div>
-
 <app-child [item]="data" (emitToParent) = "parentFunction($event)"></app-child>
