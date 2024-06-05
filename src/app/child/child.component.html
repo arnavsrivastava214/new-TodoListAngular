@@ -1,0 +1,8 @@
+
+<h1>child components works!</h1>
+<h2  *ngFor="let i of item; index as ind">
+    {{i.value}}
+    <button  class="style"(click)="deleteTodo(i)">delete</button>
+    <button  class="style" (click)="edit(i.value,ind)">edit</button>
+</h2>
+
